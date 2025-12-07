@@ -45,9 +45,7 @@ jobs:
           flavor: |
             latest=auto
           tags: |
-            type=semver,pattern=v{{version}}
-            type=semver,pattern=v{{major}}.{{minor}}
-            type=semver,pattern=v{{major}}
+            type=raw,value=latest
 
       # Build and push multi-architecture Docker images
       - name: Build and push Docker image
